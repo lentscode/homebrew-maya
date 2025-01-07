@@ -1,17 +1,17 @@
 class Maya < Formula
   desc "A CLI for developers"
   homepage "https://github.com/lentscode/maya"
-  version "0.0.1"
+  version "0.1.0"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/lentscode/maya/releases/download/v#{version}/maya-macos-x86_64"
-    sha256 "9a4cbb522e22b7022c41d2abcfdaed20f4aa295eb9f91a94e85f46a9b6e898d3"
+    sha256 "34e6957aa116ff180936585ce980e62913f3628ba967032ceaf344249ca77ae0"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/lentscode/maya/releases/download/v#{version}/maya-macos-arm64"
-    sha256 "d4cca69cd79e1fdb785afcbefe6fe26caf389773730723ecfdc568b244a4e05c"
+    sha256 "0c399cf94b27d26a34e3579798faca286f54bdaa1cc6d12b4417c31de5949d92"
   elsif OS.linux?
     url "https://github.com/lentscode/maya/releases/download/v#{version}/maya-linux-arm64"
-    sha256 "7128c2d4c4670276a309974286c16e3dba37432cfeca00ebddc8c54f06387faf"
+    sha256 "9c78b5cdc3d816d5619f13c602e007196da097edcbae3256740d101be7f0bad7"
   end
 
   def install
